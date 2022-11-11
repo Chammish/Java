@@ -1,0 +1,42 @@
+class personal
+{
+    Scanner sc = new Scanner(System.in);
+    private int num = 123;
+    private String st = sc.nextLine();
+    
+    
+    int getnum()
+    {
+    return num;
+    }
+    
+    String getst()
+    {
+    return st;
+    }
+    
+    void setnum(int set)
+    {
+        num = set;
+    }
+    
+    void setst(String boy)
+    {
+        st = boy;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        personal p = new personal();
+        int c = p.getnum();
+        String s = p.getst();
+        System.out.println(c + "   " + s);
+        p.setnum(23);
+        p.setst("Balan");
+        int sx = p.getnum();
+        String xs = p.getst();
+        System.out.println(xs + "   " + sx);
+    }
+}
