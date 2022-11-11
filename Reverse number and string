@@ -1,0 +1,40 @@
+import java.util.*;
+class Main
+{
+    public static void rev(int n)
+    {
+        Scanner sc = new Scanner(System.in);
+        if(n<20)
+        {
+            System.out.println(n);
+        }
+        else
+        {
+            System.out.print(n % 10);
+            rev(n/10);
+        }
+    }
+    public static void main(String args[])
+    {
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        rev(n);
+    }
+}
+Reverse num;
+
+class Main
+{
+    public static void main(String args[])
+    {
+        String input = "computers";
+        StringBuilder i2 = new StringBuilder();
+        i2.append(input);
+        i2.reverse();
+  
+        // print reversed String
+        System.out.println(i2);
+    }
+}
+Reverse String;
